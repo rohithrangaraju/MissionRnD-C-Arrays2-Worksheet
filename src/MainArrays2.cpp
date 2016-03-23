@@ -13,18 +13,13 @@ Objectives of C-Arrays-2 Lesson:
 ->Learning Complexities of your Algorithm
 
 */
+#define CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include "FunctionHeadersArrays2.h"
-
 int main(){
-
-	//Test countGreaterNumbers
-
-	//Test findSingleOccurenceNumber
-
-	//Test mergeSortedArray
-
-	//Test sortedArraysCommonElements
-
-	return 0;
+	int A [10]= { 1, 2, 4, 1, 2, 4, 1, 2, 4, 3 };
+	int c = findSingleOccurenceNumber(A,10);
+	printf("%d", c);
+	getchar();
+return 0;
 }

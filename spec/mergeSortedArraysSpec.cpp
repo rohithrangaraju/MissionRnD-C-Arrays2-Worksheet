@@ -73,7 +73,8 @@ namespace spec
 			struct transaction B1[3] = { { 40, "09-10-2003", "Fourth" }, { 50, "19-10-2003", "Fifth" }, { 60, "19-10-2004", "Sixth" } };
 			//int A1[3] = { 4, 6, 8 }, B1[3] = { 4, 5, 6 };
 			struct transaction *result1 = mergeSortedArrays(A1, 3, B1, 3);
-			struct transaction expected1[6] = { { 40, "09-10-2003", "Fourth" }, { 40, "09-10-2003", "Fourth" }, { 50, "19-10-2003", "Fifth" }, { 60, "19-10-2004", "Sixth" }, { 60, "19-10-2004", "Sixth" }, { 80, "03-03-2005", "Eigth" } };
+			struct transaction expected1[6] = { { 40, "09-10-2003", "Fourth" }, { 40, "09-10-2003", "Fourth" }, { 50, "19-10-2003", "Fifth" }, 
+			                                    { 60, "19-10-2004", "Sixth" }, { 60, "19-10-2004", "Sixth" }, { 80, "03-03-2005", "Eigth" } };
 			Assert::IsTrue(compare(result1, expected1, 6), L"Different arrays case failed.", LINE_INFO());
 		}
 
